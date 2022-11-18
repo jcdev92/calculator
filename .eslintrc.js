@@ -3,6 +3,10 @@ module.exports = {
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  rules: {
+    'next-line': 'off',
+    'react/react-in-jsx-scope': 'off',
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
