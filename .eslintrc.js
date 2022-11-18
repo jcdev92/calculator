@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'next-line': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react-native/no-inline-styles': 'off',
   },
   overrides: [
     {

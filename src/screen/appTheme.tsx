@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   fond: {
     flex: 1,
     backgroundColor: 'black',
-    paddingHorizontal: 20,
+    padding: 20,
     justifyContent: 'flex-end',
   },
   results: {
