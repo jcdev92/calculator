@@ -1,15 +1,22 @@
 import {Text, View} from 'react-native';
 import {styles} from './appTheme';
 import {ButtonCalc} from '../components/ButtonCalc';
+import {useState} from 'react';
 
 export const CalculatorScreen = () => {
+  const [number, setNumber] = useState('100');
+
+  const clean = () => {
+    setNumber('0');
+  };
+
   return (
     <View>
       <Text style={styles.smallResults}>1.500,00</Text>
-      <Text style={styles.results}>1.500,00</Text>
+      <Text style={styles.results}>{number}</Text>
       <View style={styles.buttonRow}>
         {/* Buttons */}
-        <ButtonCalc text="C" color="#9B9B9B" />
+        <ButtonCalc text="C" color="#9B9B9B" action={clean} />
         <ButtonCalc text="+/-" color="#9B9B9B" />
         <ButtonCalc text="del" color="#9B9B9B" />
         <ButtonCalc text="/" color="#FF9427" />
