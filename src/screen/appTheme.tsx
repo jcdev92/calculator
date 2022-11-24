@@ -11,11 +11,14 @@ export const styles = StyleSheet.create({
     color: 'white',
     fontSize: 60,
     textAlign: 'right',
+    right: 10,
+    marginBottom: 10,
   },
   smallResults: {
     color: 'rgba(255,255,255,0.5)',
     fontSize: 30,
     textAlign: 'right',
+    right: 10,
   },
   buttonRow: {
     flexDirection: 'row',
